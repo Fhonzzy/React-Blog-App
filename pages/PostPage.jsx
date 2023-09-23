@@ -9,7 +9,7 @@ function PostPage() {
 	const { userData } = useContext(Usercontext);
 
 	async function getPostDetail() {
-		const response = await fetch(`http://localhost:5000/getpost/${id}`);
+		const response = await fetch(`https://node-blog-api-qm4l.onrender.com/getpost/${id}`);
 		const data = await response.json();
 		// console.log(data);
 		setPost(data);
@@ -43,7 +43,7 @@ function PostPage() {
 				</div>
 			</div>
 			<div className="single-image-div">
-				<img src={`http://localhost:5000/${post.cover}`} alt="" />
+				<img src={`https://node-blog-api-qm4l.onrender.com/${post.cover}`} alt="" />
 			</div>
 			<div
 				className="single-post-content"

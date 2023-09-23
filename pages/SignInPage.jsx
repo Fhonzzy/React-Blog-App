@@ -8,7 +8,7 @@ function SignInPage() {
 	async function signUp(e) {
 		e.preventDefault();
 
-		await fetch("http://localhost:5000/register", {
+		await fetch("https://node-blog-api-qm4l.onrender.com/register", {
 			method: "POST",
 			body: JSON.stringify({ username, email, password }),
 			headers: { "Content-Type": "application/json" },

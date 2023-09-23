@@ -11,7 +11,7 @@ function Homepage() {
 	// };
 
 	useEffect(() => {
-		fetch("http://localhost:5000/post")
+		fetch("https://node-blog-api-qm4l.onrender.com/post")
 		.then((res)=> res.json())
 		.then((posts)=> setPosts(posts))
 	}, []);

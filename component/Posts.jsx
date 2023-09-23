@@ -6,7 +6,7 @@ function Posts({ _id, title, content, cover, author, createdAt, summary }) {
 		<section className="container">
 			<div>
 				<Link to={`/post/${_id}`}>
-					<img src={`http://localhost:5000/${cover}`} alt="Article Image" />
+					<img src={`https://node-blog-api-qm4l.onrender.com/${cover}`} alt="Article Image" />
 				</Link>
 			</div>
 			<Link to={`/post/${_id}`} className="react-link">

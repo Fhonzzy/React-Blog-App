@@ -40,7 +40,7 @@ function EditPostPage() {
 	const { id } = useParams();
 
 	useEffect(() => {
-		fetch(`http://localhost:5000/getpost/${id}`)
+		fetch(`https://node-blog-api-qm4l.onrender.com/getpost/${id}`)
 			.then((res) => res.json())
 			.then((data) => {
 				setTitle(data.title);
@@ -61,7 +61,7 @@ function EditPostPage() {
 		}
 		data.set("content", content);
 
-		const response = await fetch("http://localhost:5000/post", {
+		const response = await fetch("https://node-blog-api-qm4l.onrender.com/post", {
 			method: "PUT",
 			body: data,
 			credentials: "include",

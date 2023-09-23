@@ -12,13 +12,13 @@ function Header() {
 	// };
 
 	useEffect(() => {
-		fetch("http://localhost:5000/profile")
+		fetch("https://node-blog-api-qm4l.onrender.com/profile")
 			.then((response) => response.json())
 			.then((data) => setUserData(data.username));
 	}, []);
 
 	const logOut = () => {
-		fetch("http://localhost:5000/logout", {
+		fetch("https://node-blog-api-qm4l.onrender.com/logout", {
 			method: "POST",
 			credentials: "include",
 		});
